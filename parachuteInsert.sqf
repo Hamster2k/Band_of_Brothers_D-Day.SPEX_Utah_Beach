@@ -1,6 +1,6 @@
 params ["_unit", "_spawnPosition"];
 
-_newSpawn = [_spawnPosition, 0, 500] call BIS_fnc_findSafePos;
+_newSpawn = [_spawnPosition, 0, 1250] call BIS_fnc_findSafePos;
 
 _unit setPos (_newSpawn vectorAdd[0, 0, 200]);
 _unit setDir 0;

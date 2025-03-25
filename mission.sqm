@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=696;
+		nextID=703;
 	};
 	class MarkerIDProvider
 	{
@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={1477.035,157.16431,2128.7192};
-		dir[]={-0.4909637,0.038442038,-0.8703891};
-		up[]={0.018856704,0.99926633,0.033429943};
-		aside[]={-0.87103218,-5.6251884e-07,0.49132654};
+		pos[]={7304.5313,30.593832,5764.9854};
+		dir[]={-0.89912403,-0.42605597,-0.10026221};
+		up[]={-0.42343149,0.90469676,-0.047217265};
+		aside[]={-0.11082409,0,0.9938401};
 	};
 };
 binarizationWanted=0;
@@ -83,13 +83,14 @@ addons[]=
 	"WW2_Objects_c_Misc_IF_EditorMapSizeAndIcon_c",
 	"WW2_Objects_c_Misc_IF_EditorPreview_c",
 	"WW2_SPE_Assets_c_Weapons_Ammoboxes_c",
-	"A3_Characters_F"
+	"A3_Characters_F",
+	"A3_Data_F_Curator_Virtual"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=52;
+		items=53;
 		class Item0
 		{
 			className="WW2_SPE_Core_c_UI_Gui_c";
@@ -371,6 +372,13 @@ class AddonsMetaData
 			className="WW2_SPE_Assets_c_Weapons_Ammoboxes_c";
 			name="WW2_SPE_Assets_c_Weapons_Ammoboxes_c";
 		};
+		class Item52
+		{
+			className="A3_Data_F_Curator";
+			name="Arma 3 Zeus Update - Main Configuration";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
 	};
 };
 dlcs[]=
@@ -485,7 +493,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=166;
+		items=168;
 		class Item0
 		{
 			dataType="Marker";
@@ -560,14 +568,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={7265.5981,3.0214388,5760.123};
+						position[]={7265.2588,3.0214388,5759.168};
 						angles[]={0,4.5964465,0};
 					};
 					side="Independent";
 					flags=7;
 					class Attributes
 					{
-						name="winters";
+						name="co";
 						description="Commanding Officer@Easy Company HQ";
 						isPlayer=1;
 						isPlayable=1;
@@ -719,13 +727,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={7265.5981,3.0214388,5761.2183};
+						position[]={7265.5981,3.0214388,5761.2178};
 						angles[]={0,4.9000993,0};
 					};
 					side="Independent";
 					flags=5;
 					class Attributes
 					{
+						name="xo";
 						description="Executive Officer";
 						isPlayable=1;
 						class Inventory
@@ -23895,6 +23904,30 @@ class Mission
 			{
 			};
 			id=681;
+		};
+		class Item166
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={7272.9932,3.02,5765.8521};
+			};
+			isPlayable=1;
+			description="Temp Zeus";
+			id=701;
+			type="C_VirtualCurator_F";
+		};
+		class Item167
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={7272.2798,3.02,5770.2012};
+			};
+			isPlayable=1;
+			description="Temp Zeus";
+			id=702;
+			type="C_VirtualCurator_F";
 		};
 	};
 	class Connections

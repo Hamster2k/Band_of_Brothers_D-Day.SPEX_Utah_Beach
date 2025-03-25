@@ -2,7 +2,7 @@ missionLive = false;
 publicVariable "missionLive";
 
 planeCount = 0;
-maxPlanes = 50;
+maxPlanes = 25;
 planes = [];
 aaGuns = [aa_1, aa_2, aa_3, aa_4, aa_5, aa_6, aa_7];
 
