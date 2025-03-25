@@ -1,13 +1,13 @@
 params ["_unit", "_spawnPosition"];
 
-_newSpawn = [_spawnPosition, 0, 1250] call BIS_fnc_findSafePos;
+_newSpawn = [_spawnPosition, 0, 1000] call BIS_fnc_findSafePos;
 
 _unit setPos (_newSpawn vectorAdd[0, 0, 200]);
 _unit setDir 0;
 
 _parachute = "LIB_NonSteerable_Parachute" createVehicle [0, 0, 0];
 _parachute setPosASL (getPosASL _unit);
-_unit moveInDriver _parachute;
+[_unit, _parachute] remoteExec ["moveInDriver", _unit];
 
 _unit setUnitLoadout (_unit getVariable ["savedLoadout", []]);
 
