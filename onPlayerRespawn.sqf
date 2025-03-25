@@ -2,4 +2,6 @@ if (side player != resistance) exitWith {};
 
 _spawnPosition = getPos player;
 
-[player, _spawnPosition] execVM "parachuteInsert.sqf";
+if (getPos dropzone distance player < 100) then {
+	[player, _spawnPosition] execVM "parachuteInsert.sqf";
+};
