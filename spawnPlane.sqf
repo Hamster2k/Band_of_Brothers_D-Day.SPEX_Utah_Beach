@@ -2,7 +2,7 @@ if (!isServer) exitWith {};
 
 planeCount = planeCount + 1;
 
-_xCoord = random[-1000, 2500, 5000];
+_xCoord = random[-1000, 1000, 3000];
 
 _pilotGroup = [[0, 0, 0], independent, ["LIB_US_Pilot", "LIB_US_Pilot"]] call BIS_fnc_spawnGroup;
 

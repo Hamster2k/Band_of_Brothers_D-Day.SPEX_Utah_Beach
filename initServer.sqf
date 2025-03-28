@@ -1,13 +1,12 @@
-missionLive = false;
-publicVariable "missionLive";
+missionNamespace setVariable ["missionLive", false, true];
 
 planeCount = 0;
-maxPlanes = 25;
+maxPlanes = 20;
 planes = [];
 aaGuns = [aa_1, aa_2, aa_3, aa_4, aa_5, aa_6, aa_7];
 
 waitUntil {
-	missionLive
+	missionNamespace getVariable ["missionLive", false];
 };
 
 execVM "spawnPlanes.sqf";
