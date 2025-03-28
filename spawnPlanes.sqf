@@ -1,5 +1,7 @@
-while { time < 3600 } do {
-	while { planeCount < maxPlanes } do {
+private _maxTime = 3600; // Maximum time to spawn planes in seconds
+
+while { time < _maxTime } do {
+	while { planeCount < maxPlanes && time < _maxTime } do {
 		planes execVM "spawnPlane.sqf";
 		sleep 5;
 	};
