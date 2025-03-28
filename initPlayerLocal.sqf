@@ -1,4 +1,8 @@
+enableEngineArtillery false;
+disableRemoteSensors true;
+
 if (side player != resistance) exitWith {};
+
 player setVariable ["savedLoadout", getUnitLoadout loadout];
 
 if (serverCommandAvailable "#kick") then {
