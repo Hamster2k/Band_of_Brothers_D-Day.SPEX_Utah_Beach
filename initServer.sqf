@@ -1,5 +1,7 @@
 missionNamespace setVariable ["missionLive", false, true];
 
+setTimeMultiplier 0;
+
 planeCount = 0;
 maxPlanes = 20;
 planes = [];
@@ -8,6 +10,8 @@ aaGuns = [aa_1, aa_2, aa_3, aa_4, aa_5, aa_6, aa_7];
 waitUntil {
 	missionNamespace getVariable ["missionLive", false];
 };
+
+setTimeMultiplier 1;
 
 execVM "spawnPlanes.sqf";
 execVM "spawnParatroopers.sqf";

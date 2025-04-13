@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={4452.3442,43.453457,1012.1563};
-		dir[]={0.72692424,-0.61527306,0.30499208};
-		up[]={0.56735873,0.78831404,0.23804396};
-		aside[]={0.38689157,1.4901161e-08,-0.9221251};
+		pos[]={4428.4326,71.93515,1007.214};
+		dir[]={-0.83661443,-0.44029477,0.3259097};
+		up[]={-0.4102639,0.89785331,0.15982153};
+		aside[]={0.36298749,3.7252903e-08,0.93179381};
 	};
 };
 binarizationWanted=0;
@@ -27018,7 +27018,6 @@ class Mission
 				condition="missionNamespace getVariable [""missionLive"", false] == false;";
 				sizeA=0;
 				sizeB=0;
-				repeatable=1;
 			};
 			id=860;
 			type="EmptyDetector";
