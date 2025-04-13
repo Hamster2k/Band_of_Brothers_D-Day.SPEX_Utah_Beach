@@ -1,6 +1,8 @@
 enableEngineArtillery false;
 disableRemoteSensors true;
 
+private _jip = false;
+
 if (side player != resistance) exitWith {};
 
 player setVariable ["savedLoadout", getUnitLoadout loadout];
@@ -11,10 +13,9 @@ if (serverCommandAvailable "#kick") then {
 	}, [], 0, true, true, "", "!(missionNamespace getVariable ['missionLive', false]) && serverCommandAvailable '#kick'"];
 };
 
-if (missionNamespace getVariable ["missionLive", false]) then {
-	_spawnPosition = getPos dropzone;
 
-	[player, _spawnPosition] execVM "parachuteInsert.sqf";
+if (missionNamespace getVariable ["missionLive", false]) then {
+	_jip = true;
 };
 
 waitUntil {
@@ -31,6 +32,11 @@ sleep 10;
 sleep 10;
 ["Most men of Easy company land around Sainte-Mere-Eglise, <br/> originally an objective for the 82nd.", -1, -1, 5, 3, 0] spawn BIS_fnc_dynamicText;
 sleep 10;
+if (_jip) then {
+	_spawnPosition = getPos dropzone;
+
+	[player, _spawnPosition] execVM "parachuteInsert.sqf";
+};
 ["<t size=2>You are among them...</t>", -1, -1, 10, 5, 0] spawn BIS_fnc_dynamicText;
 [1, "BLACK", 5] call BIS_fnc_fadeEffect;
 diwako_dui_main_toggled_off = false;
