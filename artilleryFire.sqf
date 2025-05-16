@@ -1,5 +1,7 @@
 params ["_artillery"];
 
+if (!isServer) exitWith {};
+
 while {
 	alive _artillery && {
 		alive _x
