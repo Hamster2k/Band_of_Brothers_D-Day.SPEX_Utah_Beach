@@ -9,7 +9,9 @@ player setVariable ["savedLoadout", getUnitLoadout loadout];
 
 if (serverCommandAvailable "#kick") then {
 	player addAction ["Start Mission", {
-		missionNamespace setVariable ["missionLive", true, true];
+		missionLive = true;
+		publicVariable "missionLive";
+		
 	}, [], 0, true, true, "", "!(missionNamespace getVariable ['missionLive', false]) && serverCommandAvailable '#kick'"];
 };
 
