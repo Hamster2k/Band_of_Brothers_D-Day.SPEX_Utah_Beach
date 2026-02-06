@@ -16,4 +16,5 @@ waitUntil {
 
 sleep 2;
 
-"LIB_GER_ParachuteLanded" createVehicle (position _unit vectorAdd [0, -5, 0]);
+_chute = "LIB_GER_ParachuteLanded" createVehicle (position _unit vectorAdd [0, -5, 0]);
+_chute setDir 0;

@@ -1,4 +1,5 @@
-missionNamespace setVariable ["missionLive", false, true];
+missionLive = false;
+publicVariable "missionLive";
 
 setTimeMultiplier 0;
 

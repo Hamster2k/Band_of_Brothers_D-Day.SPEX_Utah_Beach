@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={7148.5615,66.915047,5803.396};
-		dir[]={0.67697591,-0.51078969,-0.53001046};
-		up[]={0.40221325,0.85969001,-0.31489697};
-		aside[]={-0.61648852,8.197967e-07,-0.78742808};
+		pos[]={1366.856,395.38174,1693.9673};
+		dir[]={0.097702354,-0.86008382,0.50070953};
+		up[]={0.16471972,0.5101527,0.84416318};
+		aside[]={0.98148942,-7.4505806e-09,-0.19151588};
 	};
 };
 binarizationWanted=0;
@@ -427,7 +427,7 @@ class ScenarioData
 };
 class CustomAttributes
 {
-	class Category1
+	class Category0
 	{
 		name="Multiplayer";
 		class Attribute0
@@ -464,7 +464,7 @@ class CustomAttributes
 		};
 		nAttributes=1;
 	};
-	class Category2
+	class Category1
 	{
 		name="Scenario";
 		class Attribute0
@@ -2189,6 +2189,10 @@ class Mission
 									ammoLeft=7;
 								};
 							};
+							class binocular
+							{
+								name="LIB_Binocular_US";
+							};
 							class uniform
 							{
 								typeName="U_LIB_US_AB_Uniform_M42_NCO";
@@ -2324,6 +2328,10 @@ class Mission
 									name="LIB_7Rnd_45ACP";
 									ammoLeft=7;
 								};
+							};
+							class binocular
+							{
+								name="LIB_Binocular_US";
 							};
 							class uniform
 							{
@@ -3934,6 +3942,10 @@ class Mission
 									ammoLeft=7;
 								};
 							};
+							class binocular
+							{
+								name="LIB_Binocular_US";
+							};
 							class uniform
 							{
 								typeName="U_LIB_US_AB_Uniform_M42_NCO";
@@ -4069,6 +4081,10 @@ class Mission
 									name="LIB_7Rnd_45ACP";
 									ammoLeft=7;
 								};
+							};
+							class binocular
+							{
+								name="LIB_Binocular_US";
 							};
 							class uniform
 							{
@@ -5652,6 +5668,10 @@ class Mission
 									name="LIB_7Rnd_45ACP";
 									ammoLeft=7;
 								};
+							};
+							class binocular
+							{
+								name="LIB_Binocular_US";
 							};
 							class uniform
 							{
@@ -7815,13 +7835,14 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={49.328342,28.942909,1613.4415};
-				angles[]={6.2713099,4.3078032,6.1366739};
+				position[]={49.328316,28.942911,1613.4414};
+				angles[]={6.271317,4.3078041,6.1366649};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
+				lock="LOCKEDPLAYER";
 				textures="Panzergrau";
 			};
 			id=172;
@@ -13187,30 +13208,31 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={1411.546,30.209032,1379.1586};
-				angles[]={0.063912325,1.0195757,6.2805109};
+				position[]={1411.5463,30.209743,1379.1583};
+				angles[]={0.063913956,1.0195689,6.2805147};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
+				lock="LOCKEDPLAYER";
 			};
 			id=311;
 			type="LIB_Kfz1_Hood_sernyt";
-			atlOffset=-0.00069618225;
 		};
 		class Item76
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={1406.106,30.551147,1373.7898};
-				angles[]={0.087774232,4.5776691,0.013332055};
+				position[]={1406.1055,30.551123,1373.79};
+				angles[]={0.0877726,4.5776672,0.013334315};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
+				lock="LOCKEDPLAYER";
 				textures="sernyt";
 			};
 			id=312;
@@ -13295,18 +13317,19 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={1416.4083,28.793467,1379.8651};
-				angles[]={0.069222413,1.4422042,6.213963};
+				position[]={1416.4083,28.793709,1379.8651};
+				angles[]={0.069219761,1.4422005,6.2139654};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
+				lock="LOCKEDPLAYER";
 				textures="grau";
 			};
 			id=313;
 			type="LIB_Pak40";
-			atlOffset=0.0037574768;
+			atlOffset=0.0039997101;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -17027,7 +17050,7 @@ class Mission
 			position[]={1508.459,36.162098,2245.4561};
 			class Attributes
 			{
-				condition="missionNamespace getVariable [""missionLive"", false];";
+				condition="missionLive";
 				sizeA=0;
 				sizeB=0;
 				timeout[]={120,120,120};
@@ -27376,7 +27399,7 @@ class Mission
 			position[]={1545.634,28.42787,2013.782};
 			class Attributes
 			{
-				condition="missionNamespace getVariable [""missionLive"", false];";
+				condition="missionLive";
 				sizeA=0;
 				sizeB=0;
 			};
@@ -28676,6 +28699,10 @@ class Mission
 									ammoLeft=7;
 								};
 							};
+							class binocular
+							{
+								name="LIB_Binocular_US";
+							};
 							class uniform
 							{
 								typeName="U_LIB_US_AB_Uniform_M42_NCO";
@@ -28811,6 +28838,10 @@ class Mission
 									name="LIB_7Rnd_45ACP";
 									ammoLeft=7;
 								};
+							};
+							class binocular
+							{
+								name="LIB_Binocular_US";
 							};
 							class uniform
 							{
@@ -30316,6 +30347,10 @@ class Mission
 									ammoLeft=7;
 								};
 							};
+							class binocular
+							{
+								name="LIB_Binocular_US";
+							};
 							class uniform
 							{
 								typeName="U_LIB_US_AB_Uniform_M42_NCO";
@@ -30451,6 +30486,10 @@ class Mission
 									name="LIB_7Rnd_45ACP";
 									ammoLeft=7;
 								};
+							};
+							class binocular
+							{
+								name="LIB_Binocular_US";
 							};
 							class uniform
 							{
@@ -31929,6 +31968,10 @@ class Mission
 									name="LIB_7Rnd_45ACP";
 									ammoLeft=7;
 								};
+							};
+							class binocular
+							{
+								name="LIB_Binocular_US";
 							};
 							class uniform
 							{
